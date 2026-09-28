@@ -1,0 +1,11 @@
+set terminal pdf
+set output "selection.pdf"
+
+set title "Recursive Selection Sort"
+set xlabel "Number of Elements (n)"
+set ylabel "Time Taken (seconds)"
+set grid
+
+plot "selection.dat" using 1:2 with linespoints title "Selection Sort"
+
+set output
