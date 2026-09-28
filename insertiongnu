@@ -1,0 +1,11 @@
+set terminal pdf
+set output "insertion.pdf"
+
+set title "Recursive Insertion Sort"
+set xlabel "Number of Elements (n)"
+set ylabel "Time Taken (seconds)"
+set grid
+
+plot "insertion.dat" using 1:2 with linespoints title "Insertion Sort"
+
+set output
